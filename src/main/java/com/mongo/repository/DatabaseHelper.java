@@ -21,11 +21,6 @@ import java.util.function.Supplier;
 @Primary
 @Component
 public class DatabaseHelper {
-
-    private static final String RECONCILIATION_NAME = "digital";
-    private static final Boolean RULE_SUPPRESSED_ITEMS_FILTERED = true;
-    private static final Boolean DIGITAL_SUPPRESSED_ITEMS_FILTERED = true;
-
     private final Map<Class, MongoRepository> repositories;
     private final MenuItemsRepository menuItemsRepository;
     private final OwnershipRepository ownershipRepository;
