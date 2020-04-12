@@ -15,7 +15,6 @@ import java.util.Optional;
 @Slf4j
 @Service
 public class McpService {
-
     private final MenuItemsRepository menuItemsRepository;
     private final OwnershipRepository ownershipRepository;
     private final DatabaseHelper databaseHelper;
@@ -26,7 +25,6 @@ public class McpService {
         this.ownershipRepository = ownershipRepository;
         this.databaseHelper = databaseHelper;
     }
-
 
     public void updateOwnershipDetailsById(OwnershipRequest request) {
 
